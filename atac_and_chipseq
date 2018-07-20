@@ -1,0 +1,68 @@
+This page collects various papers/tools for ATACseq and ChIPSeq data processing 
+
+Deep tools 
+http://deeptools.readthedocs.io/en/develop/content/example_step_by_step.html
+
+ChIPseq normalisation stratedgies 
+
+Spike-ins
+Use chromatin from a foriegn genome to adjust berwwen samples - cyclix consortium
+https://genome.cshlp.org/content/24/7/1157.full
+
+Normalisation of ATC-seq data
+https://cdn.elifesciences.org/articles/20148/elife-20148-supp6-v2.pdf\
+
+ATACseq QC
+ATACseqQC: a Bioconductor package for post-alignment quality assessment of ATAC-seq data.
+https://bioconductor.org/packages/release/bioc/html/ATACseqQC.html
+
+A comprehensive comparison of tools for differential ChIP-seq analysis
+https://academic.oup.com/bib/article/17/6/953/2453197
+
+ChIPSeeker
+https://bioconductor.org/packages/release/bioc/vignettes/ChIPseeker/inst/doc/ChIPseeker.html
+
+ATACseeker
+https://rdrr.io/github/biobenkj/ATACseeker/f/README.md
+
+Normalisation stratedgies for ATAC-seq data 
+https://www.cell.com/cell/pdfExtended/S0092-8674(16)30655-9
+
+Harvard ATAC-Seq QC guidelines - good overview of experimental and computational considerations - computational workflow is quite basic
+https://informatics.fas.harvard.edu/atac-seq-guidelines.html
+
+
+AtAC-Seq normalisation
+https://www.nature.com/articles/s41467-018-03856-y
+
+esATAC-Seq automated R atac-seq pipeline
+https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty141/4924216
+
+*Parallel factor ChIP provides essential internal control for quantitative differential ChIP-seq*
+https://academic.oup.com/nar/article/46/12/e75/4972874
+Using ChIP on CTCF on the same samples to control for sample processing noise- sonication, nuclear extract etc 
+- use counts within the non change CTCF peaksa nd use this coefficent as size factor or library normalisation 
+- standard normalisations for chip 
+  - reads per million (RPM)
+  - reads in peaks
+  - rPM total reads 
+  RPM aligned reads 
+  
+  Differential ChIP-seq
+  
+  csaw - Differential binding using sliding windows 
+  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4797262/
+  
+  
+  
+  
+  
+  Detect motifs enriched in differential ATAC-Seq 
+  DAStk -> Tripodi, I.J.; Allen, M.A.; Dowell, R.D.   Detecting Differential Transcription Factor Activity from ATAC-Seq Data. Molecules 2018, 23, 1136.
+  http://www.mdpi.com/1420-3049/23/5/1136
+  Uses center of DE peaks to predict what TF are active in the sample 
+  
+  
+  rGREAT 
+  https://bioconductor.org/packages/release/bioc/html/rGREAT.html
+  
